@@ -1,0 +1,10 @@
+
+In line number 12 of your output:
+The output should be:
+Name: abc
+But your output is: 
+aName: bc
+^
+|
+Professor's character ASCII code: hex(4e), dec(78)
+un-matched character ASCII code: hex(61), dec(97)

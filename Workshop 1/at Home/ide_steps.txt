@@ -1,0 +1,10 @@
+IDE STEPS                                                              //Workshop 1 HOME
+(Jatin Arora 136897162 )
+
+To create a Console Application on an IDE (Visual Studio 2015) –
+
+1 - Open Visual Studio 2015.
+2 -Click on File > New and select Project.
+3 - A window will pop up. There will be many options. But to build a Console application in C++ , Select C++ in the right pane.
+4 -Then Select Win32 Console Application from the middle pane.
+Rename your project at the bottom and the click on create. And you are done.

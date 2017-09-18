@@ -1,0 +1,29 @@
+JATIN ARORA (136897162)
+
+REFLECT.TXT                                           WORKSHOP 6 : HOME
+//////////////////////////////////////////////////////////////////////////
+1 – When we do self-assignment we compare the address of current object and source object. When it is done in the beginning of copy assignment operator.
+ Not doing this may result in deallocation of memory through the deallocation statement and result in release of memory holding the
+ resource data address and we would lose access to the source code.
+2- To copy one object into other object it requires the copy constructor as well as assignment operator. if we copy the object at the creation time of object then we need copy constructor. while in other case we need copy assignment operator. If we do not declare a copy constructor, the compiler inserts code that implements a shallow copy.  If we do not declare a copy assignment operator, the compiler inserts code that implements a shallow assignment. So to do deep copies we need to custom define copy constructor and copy assignment operator.
+
+3 – using functions like isEmpty didn’t required me to type code to check data input is empty or not as I just need to call that function.Also Constructors help to initialize data memebrs automatically when the control is transferred to them thereby reducing the need to intitalizn manually everytime. Functions like copy constructor and assignment operiator help to easily copy objects and operator,= function allows easy operations on arguments as many times i want. 
+
+4 - This workshop taught me about deep copying and how to create class with a resource. Creating a class with a resource is only successful if we also know how to to do deep copying
+which I learnt to do through copy assignmnet operator and copy constructor member functions. Also, this made copying objects easy and uncomplicated.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+QUIZ 5 REFLECTION
+3 (2) Code the prototypes for the two helper operators that add a double to an object of class A and return the resultant object of class A :
+a)	const ClassA& operator+=(double);
+b)	ClassA operator+(const ClassA&, double);
+
+4 (6) What is the output of the following program?  
+ANSWER – 
+B:7     
+A:0
+B:5
+~:5
+Bye
+~:12
+~:7
+

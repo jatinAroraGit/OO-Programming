@@ -1,0 +1,10 @@
+
+In line number 18 of your output:
+The output should be:
+The_Vale, population 234567
+But your output is: 
+The_Vale, populaion 234567
+                ^
+----------------|
+Professor's character ASCII code: hex(74), dec(116)
+un-matched character ASCII code: hex(69), dec(105)

@@ -1,0 +1,38 @@
+JATIN ARORA                      136897162
+!#^*(&!^@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+REFLECT.TXT                         WORKSHOP 4 HOME
+
+1 – When we initialize each instanced variable of a class through a constructor to create a well-defined structure for future usage or operations on it. This is beneficial when the client inputs wrong data.
+2- We can minimize the code by using pass by reference or address instead of value, to minimize space use and function overloading helps us to design functions with same name with little changes. Query Functions that run checks for us  can help us minimize long code lines. For instance, in this program function 
+Bool isEmpty();
+Checks if the variable addresses received are empty or not. This single function can  be called again and again in other functions to check the data input. Instead of writing if statements to check we can just call one function.
+3-Minimizing code duplication will lead to faster execution of code. It will decrease the space occupied and make program more manageable. Sometimes duplicated code can lead to redefinition errors which can be decreased if duplicated code is removed.
+4- canTravelWith() is the public member function of the class. So it can be accessed by the main module to do changes to the class data members, even if the data members are private.
+5- I would try to make code flexible yet secure. I would allow the user to define the max number of characters he could add to the array. Protecting the buffer from overflowing by ensuring that last character in an array is ‘\0’.
+6- Making sure the element on last index is ‘\0’ which in my code is made sure by(where LENGTH is 32) -
+strncpy(pname, nm, LENGTH);
+  pname[LENGTH-1]='\0';
+
+so that the compiler knows when to terminate string.
+7- This workshop was about constructors. I learned the usage of them. Constructors are important as they initialize variables and protect the code from invalid user input thereby preventing the code to execute and return garbage values.
+QUIZ 4 REFLECT
+5 (5) Change the class definition in question 4 to make OOP244 a class with a resource.  Add the required declarations to your new definition.  You do not need to give any implementations.
+class OOP244 {
+		
+
+
+	public:
+		OOP244();
+		OOP244(const char name[], int);
+
+
+
+
+		// other member functions
+	};
+
+ADD – OOP244();
+     OOP244(const char name, int);
+      ~OOP244();
+

@@ -1,0 +1,30 @@
+REFLECTION  //////////////  Workshop 1 HOME
+
+(JATIN ARORA – 136897162 ) 
+
+1 – Namespace defines the scope of identifiers enclosed in the block. Defining a namespace makes it sure that no confusion or clash occurs between identifier names especially when many people are working on the project.
+Example – 
+namespace oop {
+int quizzes = 10;
+int workshops=10;
+}
+namespace dcf {
+int quiz =8;
+ int Lab = 10;
+}
+We can use any of these variables avoiding any clash for example if I want to use the values of identifiers initialized in oop namespace then,
+using namepace oop;
+int x=x-1;   //Output = 9;
+using namespace dcf;
+int x=x-1;   //Output=7;
+In the above code snippet changes are made to the same identifier (same name) but the outcome is different because they belong to different namespace and the compiler will not give any error because of different namespace.
+
+2 - Header files contain functions and variables which can later be called or utilized in any other C++ program. Let us consider the header file we always use which is iostream. Iostream contains the cout and cin function so we don’t have to define them in every program we just have to write #include <iostream> and that’s it. We can print or input what we want without writing any function jut by including iostream header and that too in multiple programs. For example, I creted a header file which contains function declaration for a food menu. So in my main program, I don’t need to type any function definition with switch case statements. I just include the function header and I am good to go to prompt the user to input what they want from menu. The best thing I can use the same header file in the drive thru, dine in and mobile app to display the menu. This eradicates the need of typing and using same thing in multiple operations.
+
+3 - Header files constain declarations of functions hence compiling them may result to multiple  declarations.If some declarations happen to be definito:ns as we have .cpp files too that will be compiled it will lead to an error.So, it is necessary to not compile header files. 
+
+4 – When the compiler encounters the word “include” it copies the content of the included source to use later. When we include a .cpp file if I include foo.cpp in menu.cpp the source of foo is being compiled twice leading to multiple definitions and you will encounter errors.
+
+5 – To build even a simple software programmers have to write long code. These may even stretch to millions of lines of code. Imagine writing a code of 10 million lines for a business software and when compiling error pops up or maybe it compiled and did not work correctly. You would have to read a tonne of code to find an error. This is an impractical way and inefficient. When we divide program into modules error detection whether semantic or syntactic becomes easy. We can point out a specific part of code not working and debug it. Making modules keeps the program organized and manageable. Modular programming makes possible for groups to work on each module individually instead of one person making the whole thing. This enhances efficiency, speed and less code has to be written per person.
+
+6 – This workshop made us learn how to make and include header files. In addition to that I also learnt the use of guards in header files in the “home” part of the lab to prevent multiple inclusion. I also learnt to use IDE and start coding in it through the video link which was provided.

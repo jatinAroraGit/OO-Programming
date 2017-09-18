@@ -1,0 +1,12 @@
+Hey there fellow Coder/ Copier.
+ 
+This is my repository which contains some of my work in C++.
+
+Each Workshop folder has 2 folders and 1 docx file inside. The docx file will tell you 
+the purpose of the code. or for what is the purpose of a particular workshop. The Workshops are
+split into two parts in lab and at home.
+
+The Project is divided into 6 parts which are referrred to as Milestoness here.
+ Each Milestone has code and purpose of the milestone inside it
+
+Happy Exploring.

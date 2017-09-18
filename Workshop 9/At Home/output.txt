@@ -1,0 +1,49 @@
+Script started on Tue 01 Aug 2017 08:28:15 PM EDT
+jarora4@matrix:~/oop244/W9Home> ws
+Testing constructors
+PASS, Constructors!
+Testing bool operator
+PASS, operator bool().
+PASS: string length works
+testing operator+  :Hello World
+*** glibc detected *** ws: invalid fastbin entry (free): 0x08051a30 ***
+======= Backtrace: =========
+/lib/libc.so.6(+0x6ff0b)[0xb74dff0b]
+/usr/local/gcc/5.2.0/lib/libstdc++.so.6(_ZdlPv+0x18)[0xb76c0488]
+/usr/local/gcc/5.2.0/lib/libstdc++.so.6(_ZdaPv+0x18)[0xb76c04e8]
+ws[0x8048b92]
+ws[0x8048d28]
+ws[0x80495c1]
+/lib/libc.so.6(__libc_start_main+0xf3)[0xb7489003]
+ws[0x8048941]
+======= Memory map: ========
+08048000-0804b000 r-xp 00000000 00:23 2615826    /home/jarora4/oop244/W9Home/ws
+0804b000-0804c000 r--p 00003000 00:23 2615826    /home/jarora4/oop244/W9Home/ws
+0804c000-0804d000 rw-p 00004000 00:23 2615826    /home/jarora4/oop244/W9Home/ws
+0804d000-08072000 rw-p 00000000 00:00 0          [heap]
+b746d000-b7470000 rw-p 00000000 00:00 0 
+b7470000-b75d7000 r-xp 00000000 08:01 1365267    /lib/libc-2.14.1.so
+b75d7000-b75d9000 r--p 00167000 08:01 1365267    /lib/libc-2.14.1.so
+b75d9000-b75da000 rw-p 00169000 08:01 1365267    /lib/libc-2.14.1.so
+b75da000-b75dd000 rw-p 00000000 00:00 0 
+b75dd000-b75f9000 r-xp 00000000 08:01 407172     /usr/local/gcc/5.2.0/lib/libgcc_s.so.1
+b75f9000-b75fa000 r--p 0001b000 08:01 407172     /usr/local/gcc/5.2.0/lib/libgcc_s.so.1
+b75fa000-b75fb000 rw-p 0001c000 08:01 407172     /usr/local/gcc/5.2.0/lib/libgcc_s.so.1
+b75fb000-b7624000 r-xp 00000000 08:01 1365275    /lib/libm-2.14.1.so
+b7624000-b7625000 r--p 00028000 08:01 1365275    /lib/libm-2.14.1.so
+b7625000-b7626000 rw-p 00029000 08:01 1365275    /lib/libm-2.14.1.so
+b7648000-b764a000 rw-p 00000000 00:00 0 
+b764a000-b77c9000 r-xp 00000000 08:01 407187     /usr/local/gcc/5.2.0/lib/libstdc++.so.6.0.21
+b77c9000-b77cf000 r--p 0017e000 08:01 407187     /usr/local/gcc/5.2.0/lib/libstdc++.so.6.0.21
+b77cf000-b77d0000 rw-p 00184000 08:01 407187     /usr/local/gcc/5.2.0/lib/libstdc++.so.6.0.21
+b77d0000-b77d4000 rw-p 00000000 00:00 0 
+b77d4000-b77f3000 r-xp 00000000 08:01 1365260    /lib/ld-2.14.1.so
+b77f3000-b77f4000 r--p 0001f000 08:01 1365260    /lib/ld-2.14.1.so
+b77f4000-b77f5000 rw-p 00020000 08:01 1365260    /lib/ld-2.14.1.so
+bf8b7000-bf8d8000 rw-p 00000000 00:00 0          [stack]
+ffffe000-fffff000 r-xp 00000000 00:00 0          [vdso]
+Aborted
+jarora4@matrix:~/oop244/W9Home> ex[Kit
+exit
+
+Script done on Tue 01 Aug 2017 08:30:48 PM EDT

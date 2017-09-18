@@ -1,0 +1,14 @@
+WORKSHOP 7 HOME                                                                                  JATIN ARORA (136897162)
+REFLECT .TXT                                                                                             
+*************************************************************************************
+1 – If we use unsigned integer for m_health the minimum value it can hold is zero. If the  current value of m_health is 1 and hero gets damaged by 2 then the the m_health is -1 which cannont be stored in a unsigned integer so we use signed integer for m_health.
+2- Hero does not need to know the existence of Superhero class as it is the base class and Superhero class is derived class. Superhero inherits Hero without having effecting on Hero class strucuture.
+3 – When a Hero fights a superhero it says – Best Greek Hero Vs Best Comic Superhero 
+Ancient Battle!!
+
+4 – Both are true. In both cases operator* is used to determine winner .In first case since there are only 2 heroes the output straightaway shoes final battle. In 2nd Case since we are defining 4 heroes operator* is used thrice to determine final winner
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+QUIZ 6 REFLECT
+Q2 – class friends.
+Q4 -Class Student : public Person {};
+

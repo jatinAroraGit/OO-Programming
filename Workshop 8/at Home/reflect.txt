@@ -1,0 +1,24 @@
+REFLECT.TXT
+WORKSHOP 8 HOME                                                                            JATIN ARORA 136897162
+************************************************************************
+1 – An abstract class is a class with methods that are declared but not defined so the compiler knows the method exist as a part of that class but doesn’t have any code to execute.
+Example
+Class abc{
+public:
+virtual void display(int n)=0;
+};
+We cannot use this class as it is as it cannot be instantiation as there is no code to execute. To implement this class we must make a class which is called a concrete class which is derived from base class to implement that method.
+Example
+Class xyz : public abc{
+virtual display(int n){
+cout<<n<<endl;
+}
+}; 
+Here xyz becomes a concrete class.
+
+2- We need pure virtual member functions in base class so that that function can be implemented in different ways easily in its derived classes and exhibit polymorphism that is one interface multiple outcomes.
+3 – This workshop made me know about benefits about polymorphism through pure virtual member fucntion like debit() and credit() I used in this workshop and implemented them in different ways in SavingsAccount.cpp and ChequingAccount.cpp
+*********************************************************************
+QUIZ 7 REFLECT
+1 - virtual void display(std::ostream&) const; 
+virtual char* go() const;

@@ -1,0 +1,42 @@
+////////// JATIN ARORA   136897162 /////////////////////////////////////////////////////
+REFLECT.TXT                                                                Workshop 5 Home
+////////////////////////////////////////////////////////////////////////////////////// //////////                                              
+1 – When we return reference to’ Fraction’, minimal work is done to change or copy the new values to the current object of ‘Fraction’, thereby reducing time and making code efficient. Returning value will take more intermediate steps to copy the values in the object.
+2 – I used returning object as pointer in –
+Fraction Fraction :: operator+=(const Fraction& F3)
+	{
+			if (this->isEmpty() != true && F3.isEmpty() != true) {
+				this->numerator = ((this->numerator * F3.denominator) + (F3.numerator * this->denominator));
+				this->denominator = (this->denominator * F3.denominator);
+			}
+			return *this;
+}
+This copies the new values instantly to the current object and also since address is being copied so no copy is being created in the memory and it saves both time and space.
+
+3 - sict::Fraction a;
+In w5_at_home.cpp file is the temporary object in main function.
+4 – The purpose of member functions
+bool operator==(const Fraction& F)const;
+bool operator!=(const Fraction& F)const;
+is actually same which is to compare objects and return true or false. These both can be replaced by a bool function as - 
+bool compare(const Fraction& rF, const Fraction& lF) const; 
+This single function can return false if they don’t match and true if they match. This will minimize the code and member functions to be written.
+5 – This workshop primarily focused on Operator overloading which is essential as I learnt how ot carry out operations on objects with just writing code once and then calling it where needed.
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Quiz 5 Reflection
+3 (2) Code the prototypes for the two helper operators that add a double to an object of class A and return the resultant object of class A :
+a)	const ClassA& operator+=(double);
+b)	ClassA operator+(const ClassA&, double);
+
+4 (6) What is the output of the following program?  
+answer - 
+B:7
+A:0
+~:0
+B:5
+~:5
+Bye
+~:12
+
+	
+ 

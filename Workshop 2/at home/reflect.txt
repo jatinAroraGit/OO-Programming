@@ -1,0 +1,30 @@
+WORKSHOP 2                  HOME                          REFLECT.TXT
+---------------------------------------------
+JATIN ARORA  136897162
+!#^*(&!^@
+---------------------------------------------
+1 – Failure or not deallocating memory will result in memory being reserved even if we don’t need it and it may lead to a memory leak if that variable goes out of scope as it is not deallocated. These bugs are difficult to find and resolve. Also having memory occupied lessens the available space.
+
+2- Originally the array had dynamically allocated memory for 2 elements or kingdoms in this case. But when we needed to update it by one we had to again allocate dynamic memory but for this time for 3 elements to have enough space.
+3. When we declare an array, there is memory reserved for specified number of elements. So it does not matter if we don’t use “delete” command as the specified memory is already reserved.
+4 The two display functions declarations are as follows –
+void display(const Kingdom &obj);
+
+void display(Kingdom* pKingdom, int count);
+
+When we use overloaded function, compiler distinguishes between them by their he function identifier, parameter types and order of parameters. In these declarations both functions take different set of parameters which makes it easy for compiler to call the correct function depending on the arguments passed when the function is called.
+
+For example .   
+Display(*pointer, size)     will call the” void display(Kingdom* pKingdom, int count);” function.
+
+5 – This workshop made me practice and learn how to pass objects and pointers. Most importantly I learnt the usage of dynamic memory which is a key concept in C++ and how deallocation is necessary. I also used overloaded functions not for the first time but it refreshed the concept of that.
+
+QUIZ 2 REFLECTION
+
+4) Correct the following program to protect data from changes by the main() function and ensure that the number of students is non-negative.
+CORRCTIONS - Use set() function with if conditions to accept only positive integers.
+
+5) Which ostream member function operates only on the next output field?- width(int) function
+
+6) (2) Add the statement(s) that displays the number e to 4 decimal places on standard output
+- std::setprecision(4);

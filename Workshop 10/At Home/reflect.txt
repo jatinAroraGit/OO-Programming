@@ -1,0 +1,111 @@
+WORKSHOP 10 HOME                                                                                    JATIN ARORA   136897162
+REFLECT.TXT
+
+1 – Polymorphism is divided into 4 categories. If you want that works on finite set of different and potentially unrelated types coercion and overloading is the way to go. But if you have infinite number of types we use inclusion and parametric polymorphism.
+*Coercion - 
+.
+In this example display function has argument type set to int but in function call an int then a character and then a double is supplied but the function converts them to int and then prints.
+ void display(int a) {
+     std::cout << "One argument (" << a << ')'; 
+ }
+
+ int main( ) {
+
+     display(10);
+     std::cout << std::endl;
+     display(12.6); // narrowing
+     std::cout << std::endl;
+     display('A'); // promotion
+     std::cout << std::endl;
+ }
+
+*Overloading- 
+
+In this two display functions are defined and the function which is used depe3nnds on the type of arguments in function call.
+void display() {
+     std::cout << "No arguments";
+ }
+
+ void display(int a) {
+     std::cout << "One argument (" << a << ')'; 
+ }
+
+ int main( ) {
+
+     display();
+     std::cout << std::endl;
+     display(10);
+     std::cout << std::endl;
+ }
+
+*Inclusion – 
+
+#include <iostream>
+ #include "Course.h"
+ using std::cout;
+ using std::endl;
+
+ int main( ) {
+     Course abc123("Intro to OO")
+     HybridCourse abc124("Intro to OO*");
+     cout << abc123.assessments() << endl;
+     cout << abc123.mode() << endl;
+     cout << abc124.assessments() << endl; 
+     cout << abc124.mode() << endl;
+ }
+
+*Parametric – 
+template<typename T>
+ void sort(T* a, int n) {
+     int i, j;
+     T temp;
+
+     for (i = n - 1; i > 0; i--) {
+         for (j = 0; j < i; j++) {
+             if (a[j] > a[j+1]) {
+                 temp = a[j];
+                 a[j] = a[j+1];
+                 a[j+1] = temp;
+             }
+         }
+     }
+ }
+
+ class Student {
+     int no;
+     // other data - omitted here
+   public:
+     Student(int n = 0) : no(n) {}
+     bool operator>(const Student& rhs) const {
+         return no > rhs.no;
+     }
+     void display(std::ostream& os) const {
+         os << no << std::endl;
+     }
+ };
+
+ int main( ) {
+     int m[] = {189, 843, 321};
+     Student s[] = {Student(1256), Student(1267), Student(1234)}; 
+
+     sort(m, 3);
+     for (int i = 0; i < 3; i++)
+         std::cout << m[i] << std::endl;
+
+     sort(s, 3);
+     for (int i = 0; i < 3; i++)
+         s[i].display(std::cout);
+ }
+2 – Template are form of Parametric polymorphism.
+3 – Tempelates are used to use one function for various argument types. If the template is not called polymorphism will not be applied as a result we cannot use one function for various data types and hence we have to create different functions for each possible data type which will be a tedious task.
+
+SURVEY – 
+4 – The most interesting thing was dynamic allocation. Using that concept we can create code that can accept and work on any char style string of any length. 
+5 – Quizes are integral part of this ocurse as they help you learn on weekly bases and also are a good way in testing your concepts in short steps.
+6 – I liked how workshops were layed in this course, the material we were taught exactly was aligned what we do in workshops. Also, reflection part was a great way on testing ourselves.
+7 – I disliked the way milestones were delivered. For example Milestone 6 Tester was not up until day 3. I had to coreect my code from scratch to able to test accordingly.
+8- Sample quizzes at the end of course to prepare students for exams.
+9 – c
+10 – The workshops were fun as they challenged me and let me know where I stand in the course.
+Also, they help you put theory in practice in a practical way.
+11 – b 

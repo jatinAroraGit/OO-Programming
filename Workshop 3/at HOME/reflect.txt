@@ -1,0 +1,26 @@
+JATIN ARORA           136897162
+!#^*(&!^@
+------------------------------------------------------------------------------------------------------------------------------------------
+OOP 244 REFLECT                                          WORKSHOP 3 HOME
+
+1 – The size of Character Array to store Account name is MAX_NAME_LENGTH+1  - 
+char famnm[MAX_NAME_LENGTH+1];
+The value of MAX_NAME_LENGTH is defined to be 32 but we had to add one because to accommodate ‘\0’ or null character which terminates it.
+2 – I used the concept of class and its data members and member functions to encapsulate my code. Some ‘public’ member functions to modify Class variables. Usage of member functions of cout to set precision or set decimal places to 2. Function overloading of class member functions.
+3 – When we overload a function we use same function name but it differs in the parameters and their arrangement. In this program, set functions both did a similar task which was to assign a value to the class data members which may otherwise cannot be modified directly. Since the purpose is similar, we can use same method name for same implementation though they differ in parameters. Thereby creating a consistent naming for the functions that do similar things.
+void set(int year, double balance);
+void set(const char* familyName, const char* givenName, int sin);
+4 – By using  member functions of cout called setf and precision. - 
+cout.setf(ios::fixed);
+ cout.precision(2);
+5 – To check if the SIN number for which it is being stored is valid or not and space is available to store it or not.
+6 – This Workshop was tough. But it was good for learning. I learnt the usage of class. Class is an essential part of object oriented programming. Other thing I learnt was how to modify or access class private members through public member functions. The usage of a function having bool return type as I use bool datatype for second time.
+
+//QUIZ 3 REFLECTION///////////////////////////////////////////////////////////////////////////////////////////////
+
+6 (3)- Complete the code to return an unmodifiable reference to the current object.
+____const OOP244&__________________ OOP244::foo() const {
+	// . . . member function logic
+return *this;
+}  
+

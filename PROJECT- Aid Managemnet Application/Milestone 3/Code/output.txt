@@ -1,0 +1,24 @@
+Script started on Wed 12 Jul 2017 12:49:18 PM EDT
+jarora4@matrix:~/oop244/MS3> ms3
+Linear: one two 
+As is: 
+one
+two
+
+Enter the following: 
+three<ENTER>
+four<ENTER>
+Ctrl-D
+
+three
+four
+one two three four 
+one
+two
+three
+four
+
+jarora4@matrix:~/oop244/MS3> exit
+exit
+
+Script done on Wed 12 Jul 2017 12:49:31 PM EDT

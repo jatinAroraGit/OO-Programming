@@ -1,0 +1,20 @@
+#include "Streamable.h"
+namespace sict {
+Streamable::Streamable(){}
+	fstream & Streamable::store(fstream & file, bool addNewLine) const
+	{
+		return file;
+	}
+	fstream & Streamable::load(std::fstream & file)
+	{
+		return file;
+	}
+	ostream & Streamable::write(ostream & os, bool linear) const
+	{
+		return os;
+	}
+	istream & Streamable::read(istream & is)
+	{
+		return is;
+	}
+}

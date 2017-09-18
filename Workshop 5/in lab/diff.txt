@@ -1,0 +1,10 @@
+
+In line number 4 of your output:
+The output should be:
+Fraction a; // a = no fraction stored
+But your output is: 
+Fraction a; // a = Invalid Fraction Object!
+                   ^
+-------------------|
+Professor's character ASCII code: hex(6e), dec(110)
+un-matched character ASCII code: hex(49), dec(73)
